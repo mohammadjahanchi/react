@@ -5,11 +5,12 @@ class App extends Component {
   render(){
     return(
       <div>
-        <h1>mohammad react course</h1>
-        <hr />
-        <User></User>
-        <User></User>
-        <User></User>
+       <User name="Mohammad"age="27" />
+       <User name="ali" age="20" />
+       <User name="neda" age="11"/>
+       <User name="reza" age="37"/>
+       <User name="aref" age="42"/>
+
       </div>
     )
   }

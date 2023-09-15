@@ -1,20 +1,10 @@
-import React,{Component} from 'react'
+import React from "react";
 
-export default class User extends Component {
-  render() {
-    return (
-      <div>
-        <h1>mohammad1</h1>
-      </div>
+const User=(props)=>{
+    console.log(props)
+    return(
+        <h1>{props.age}-{props.name}</h1>
     )
-  }
 }
 
-// const User=()=>{
-//     return(
-//         <div>
-//             <h3>mohammad3</h3>
-//         </div>
-//     )
-// }
-// export default User;
+export default User;
