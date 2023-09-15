@@ -1,18 +1,15 @@
 import React,{Component} from "react";
 import User from "./users/User";
+import './App.css';
+import Product from "./products/Product";
 
-class App extends Component {
-  render(){
-    return(
-      <div>
-       <User name="Mohammad"age="27" />
-       <User name="ali" age="20" />
-       <User name="neda" age="11"/>
-       <User name="reza" age="37"/>
-       <User name="aref" age="42"/>
-
-      </div>
-    )
-  }
+const App=()=>{
+  return(
+    <div className="container">
+      <Product title="کفش اسپرت" image="images/1.jpg" price={120} />
+      <Product title="کفش مجلسی" image="images/4.jpg" price={200} />
+      <Product title="کفش رنگی رنگی" image="images/2.jpg" price={150} />
+    </div>
+  )
 }
-export default App
+export default App;
