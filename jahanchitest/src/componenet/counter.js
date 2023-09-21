@@ -1,5 +1,7 @@
 import React,{useState,Component} from "react";
 import './counter.css'
+import styled from 'styled-components';
+
 const Counter=()=>{
 const[count,setCount]=useState(0);
   const[name,setName]=useState('mohammad');
@@ -7,16 +9,22 @@ const[count,setCount]=useState(0);
     setName(e.target.value);
     console.log(name)
   }
-  const mystyle={
-    color:'green',
-    fontweight:'bold',
-  }
+  // const mystyle={
+  //   color:'green',
+  //   fontweight:'bold',
+  // }
+  const Button=styled.button`
+  cursor:pointer;
+  backround:transparat;
+  font-size:50px;
+  `
   return(
     <div>
-      <p style={mystyle}>yo clicked {count}times</p>
-      <button onClick={()=>setCount(count+1)} >
+      <p>yo clicked {count}times</p>
+      <Button onClick={()=>setCount(count+1)} >
         Click Me
-      </button>
+      </Button>
+
       <input name="name" value={name} onChange={handleChange} />
     </div>
   )
