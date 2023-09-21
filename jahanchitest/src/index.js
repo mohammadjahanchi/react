@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import State from './componenet/state';
+import Counter from './componenet/counter';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <App />
     <h1> salam </h1>
-    <State></State>
+    <Counter></Counter>
    
   </React.StrictMode>
 );
